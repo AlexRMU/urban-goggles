@@ -8,7 +8,7 @@
     // $inspect("visits", visits);
 </script>
 
-<div class="container">
+<div class="wrap">
     {#if sites.value?.length}
         {#each sites.value as { domain }}
             <a href="https://{domain}" target="_blank">
@@ -24,7 +24,7 @@
 </div>
 
 <style lang="scss">
-    .container {
+    .wrap {
         display: flex;
         flex-direction: column;
         align-items: center;

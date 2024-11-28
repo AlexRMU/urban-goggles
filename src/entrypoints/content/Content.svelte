@@ -28,8 +28,9 @@
     // $inspect("closed", closed);
     // $inspect("all_visits", all_visits);
 
-    function close() {
+    async function close() {
         console.log("close");
+        await closed_on.promise;
         if (!closed_on.value) {
             closed_on.value = [];
         }
@@ -47,7 +48,7 @@
 </script>
 
 {#if !closed && visits <= 3 && text}
-    <div class="container">
+    <div class="wrap">
         <FloatingContainer>
             <div class="content">
                 {text}
@@ -60,7 +61,7 @@
 {/if}
 
 <style lang="scss">
-    .container {
+    .wrap {
         position: fixed;
         top: 50%;
         left: 50%;
@@ -73,19 +74,17 @@
             border-radius: 8px;
             border: 1px solid #00000021;
         }
-
-        .content {
-            padding: 4rem;
-
-            button {
-                border-radius: 4px;
-                padding: 1rem;
-                width: 100%;
-                font-weight: bold;
-                background-color: transparent;
-                border: none;
-                cursor: pointer;
-            }
-        }
+    }
+    .content {
+        padding: 4rem;
+    }
+    button {
+        border-radius: 4px;
+        padding: 1rem;
+        width: 100%;
+        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
     }
 </style>

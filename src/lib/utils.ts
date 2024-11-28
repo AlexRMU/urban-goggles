@@ -5,7 +5,7 @@ export type Site = {
     text: string;
 };
 
-export const search_engine_domains = new Set(["google.com", "google.ru", "www.google.com", "www.google.ru", "ya.ru"]);
+export const search_engine_domains = new Set(["google.com", "google.ru", "ya.ru"]);
 export const update_interval = 1000 * 60 * 60 * 4; // 4h
 export const sites_src = "https://config-tool.ru/ext.json";
 

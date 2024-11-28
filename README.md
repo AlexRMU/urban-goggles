@@ -28,6 +28,7 @@ Task - https://docs.google.com/document/d/1Iv3Tc06N7Fgvy8iIDFdy0_kvNoV4JBNTOsuoh
 ## Dev
 
 - run `npm run dev`
+- a new browser window will open
 
 ## Build
 
@@ -36,6 +37,12 @@ Task - https://docs.google.com/document/d/1Iv3Tc06N7Fgvy8iIDFdy0_kvNoV4JBNTOsuoh
 - expand the developer dropdown menu and click `Load Unpacked Extension`
 - navigate to `{root}/build/chrome-mv3/`
 - click `Ok`
+- extension is installed
+
+## Build zip
+
+- run `npm run zip`
+- archive will be in `{root}/build`
 
 ## Used packages
 
