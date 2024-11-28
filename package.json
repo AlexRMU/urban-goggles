@@ -1,0 +1,27 @@
+{
+    "name": "urban-goggles",
+    "type": "module",
+    "scripts": {
+        "dev": "wxt",
+        "dev:firefox": "wxt -b firefox",
+        "build": "wxt build",
+        "build:firefox": "wxt build -b firefox",
+        "zip": "wxt zip",
+        "zip:firefox": "wxt zip -b firefox",
+        "postinstall": "wxt prepare"
+    },
+    "devDependencies": {
+        "@tsconfig/svelte": "^5.0.4",
+        "@types/chrome": "^0.0.287",
+        "sass": "^1.81.0",
+        "@wxt-dev/module-svelte": "^2.0.0",
+        "tslib": "^2.8.1",
+        "wxt": "^0.19.13",
+        "prettier": "^3.4.1",
+        "prettier-plugin-svelte": "^3.3.2",
+        "svelte": "^5.2.10",
+        "svelte-preprocess": "^6.0.3",
+        "typescript": "^5.7.2"
+    },
+    "dependencies": {}
+}
